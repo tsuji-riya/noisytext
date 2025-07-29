@@ -12,6 +12,10 @@
   },
   "author": "Tsuji Riya",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsuji-riya/noisytext"
+  },
   "devDependencies": {
     "prettier": "^3.6.2",
     "typescript": "^5.8.3"
