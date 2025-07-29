@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tsuji-riya/noisytext"
+    "url": "https://github.com/tsuji-riya/noisytext.git"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
