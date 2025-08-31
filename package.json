@@ -1,14 +1,19 @@
 {
   "name": "noisytext",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Noisy Text",
   "type": "module",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
+    ".": "./dist/index.js",
     "./vue": "./dist/vue/index.js"
   },
   "scripts": {
