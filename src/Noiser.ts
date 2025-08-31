@@ -25,9 +25,10 @@ export class Noiser {
     let index = 1;
     let chars = value[0];
     const maxIndex = value.length;
-    const interval = setInterval(() => {
+    let currentPeriod = this.period;
+
+    const tick = () => {
       if (index >= maxIndex + 10) {
-        clearInterval(interval);
         callback(value);
         return;
       }
@@ -39,6 +40,12 @@ export class Noiser {
           Noiser.randomize(chars.substring(Math.max(0, index - 10), index)),
       );
       index += 1;
-    }, this.period);
+      currentPeriod = Math.max(5, currentPeriod * 0.95);
+      setTimeout(tick, currentPeriod);
+    };
+
+    setTimeout(tick, currentPeriod);
   }
 }
+
+export const NoiserText = new Noiser();
