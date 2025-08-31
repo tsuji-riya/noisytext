@@ -1,6 +1,6 @@
 {
   "name": "noisytext",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Noisy Text",
   "type": "module",
   "engines": {
